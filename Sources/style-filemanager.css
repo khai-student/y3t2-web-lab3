@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
+    /*background-image: url('img/item-background.jpg');*/
+    /*background-size: cover;*/
+}
+
+div {
+    overflow: hidden;
+}
+
+p {
+    text-align: left;
+    font-family: Ubuntu;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu {
+    padding: 23px 20px;
+    max-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    height: 50px;
+    margin: 1.3px 3px 1.3px 3px;
+    border: solid;
+    border-width: thin;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hover:hover {
+    margin-left: -5px;
+    padding: 0px 8px;
+    width: calc(100% + 10px);
+    background: rgba(255,255,255,0.5);
+}
+
+.hover {
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -ms-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+}
+
+.hover:hover {
+    margin-left: -5px;
+    padding: 0px 8px;
+    width: calc(100% + 10px);
+    background: rgba(255,255,255,0.5);
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.field-name {
+    height: inherit;
+    justify-content: flex-start;
+    width: 57%;
+}
+.field-name>p {
+    font-family: Ubuntu;
+    font-style: normal;
+    margin-left: 25px;
+}
+
+.field-type {
+    height: inherit;
+    width: 13%;
+}
+
+.field-size {
+    height: inherit;
+    justify-content: flex-start;
+    width: 10%;
+}
+
+.field-ctime {
+    height: inherit;
+    width: 20%;
+}
+.field-ctime>p {
+    font-size: 11px;
+    text-align: center;
+}
+
+.header-menu {
+    height: 25px;
+    width: 100vw;
+    margin: 0;
+    padding: 0px 20px;
+    border: hidden;
+    border-radius: 0px;
+    background: rgba(255,255,255,1);
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px 5px 20px 3px white;
+}
+
+.header-menu>div>p {
+    font-style: italic;
+    color: black;
+}
+
+.footer-menu {
+    height: 25px;
+    margin: calc(100vh - 25px) 0px 0px 0px;
+    width: 100vw;
+    padding: 0px 20px;
+    border: hidden;
+    border-radius: 0px;
+    background: rgba(255,255,255,1);
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0px -5px 20px 3px white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}

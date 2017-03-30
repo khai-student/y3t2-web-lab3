@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+input {
+    display: block;
+    margin: 3px 7px;
+    width: 300px;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-info {
+
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+}
+
+.image-item {
+    margin-right: 10px;
+    margin-top: 3px;
+    width: 150px;
+    height: 150px;
+}
+
+.advanced-div {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: indianred;
+    background-color: rgba(0, 0, 0, 0.67);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cloud-div {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: white;
+}
+
+.cloud-close-button {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-left: calc(100% - 14px);
+}
+
+.cloud-div-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.cloud-div-content-text {
+    margin-left: 5px;
+}

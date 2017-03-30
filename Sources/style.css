@@ -1,0 +1,290 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: 'AGRevueCyrItalic';
+   src: url('font/agrevuecyr-italic.ttf');
+}
+
+body{
+   margin: 0px;
+   display: flex;
+   justify-content: left;
+   background-color: #4b4b4b;
+   font-size: 10px;
+   font-family: "Times New Roman";
+   position: relative;
+}
+.app{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 780px;
+   min-height: 600px;
+   background-image: url(pictures/back2.png);
+   background-repeat: no-repeat;
+   background-color: white;
+   margin: 23px auto auto auto;
+   position: relative;
+}
+#logoBall{
+   z-index: 1;
+   position: absolute;
+   top: 3px;
+   left: 42px;
+}
+
+menu{
+   margin-top: 94px;
+   margin-bottom: 0px;
+   padding: 0px;
+   font-family: 'AGRevueCyrItalic';
+}
+menu>ul{
+   display: flex;
+   list-style: none;
+   padding: 0px;
+}
+menu>ul>li{
+   margin-right: 3px;
+   background-color: black;
+}
+
+menu>ul>li>a{
+   text-decoration: none;
+   color: white;
+   font-size: 104%;
+   text-transform: uppercase;
+}
+menu>ul>li>a:hover{
+   background-color: #73737a;
+}
+.end{
+   flex-grow: 1;
+   margin-right: 0px;
+}
+
+
+main{
+   margin-top: 36px;
+   display: flex;
+
+}
+/*Размеры трёх основных блоков*/
+.news,.article,.sponsors{
+   margin-bottom: 14px;
+}
+.news{
+   width: 170px;
+}
+.article{
+   width: 610px;
+}
+.sponsors{
+   flex-grow: 1;
+}
+
+input {
+   margin: 5px 2px 5px 2px;
+}
+
+.rating-h{
+   margin: 2px 0px 8px 25px;
+}
+.article-h1{
+   margin: 2px 0px 8px 32px;
+}
+.rating{
+   font-family: "Times New Roman";
+   display: flex;
+   margin-bottom: 15px
+}
+.rating>ul{
+   list-style: none;
+   margin: 0px;
+   padding-left: 2px;
+}
+.rating>ul>li{
+   margin-top: 2.7px;
+   font-size: 16.5px;
+}
+.rating>ul .first{
+   margin-top: 1.6px;
+}
+.rating>hr{
+   margin: 0px 2px 0px 8px;
+   width: 4px;
+   background-image: linear-gradient(to bottom, #fc9004, #ffffff);
+   border: none;
+}
+
+
+.banner{
+   margin-top: 17px;
+}
+.banner-header{
+   text-align: right;
+   padding-right: 3px;
+   width: 164px;
+}
+.banner-h{
+   display: block;
+   margin: 12px auto 4px 49px;
+}
+.banner-img{
+   margin-left: 10px;
+}
+
+
+
+.article{
+   position: relative;
+   overflow: visible;
+}
+.article p{
+   margin: 0px 0px 10px 0px;
+}
+.article-img{
+   position: absolute;
+   top: 4px;
+   right: 4px;
+}
+.article-text{
+   color: #286086;
+   border-left: 2px solid #286086;
+   margin: 0px 178px 0px 5px;
+   padding-left: 4px;
+   font-size: 10.2px;
+}
+.article-h2{
+   font-size: 12px;
+   text-decoration: underline;
+}
+.article-more{
+   margin: -10px 0px 0px 5px;
+   width: 404px;
+   padding-top: 10px;
+   color: #286086;
+   font-size: 12px;
+   border-left: 2px solid #286086;
+   border-bottom: 2px solid #286086;
+   height: 41px;
+   text-align: center;
+}
+.article-games{
+   text-align: center;
+   box-sizing: border-box;
+   border: 1px solid red;
+   width: 408px;
+   margin: 5px 0px 0px 5px;
+   display: flex;
+   height: 90px;
+}
+.article-games>hr{
+   margin: 5px 0px 5px 0px;
+   width: 1px;
+   background-color: red;
+   border: none;
+}
+.article-games p{
+   margin:0px;
+}
+.game{
+   margin: 6px;
+   color: #286086;
+}
+.game>p{
+   margin-top: 7px;
+}
+.game-1{
+   width: 186px;
+}
+.game-2{
+   flex-grow: 1;
+}
+.game-h2{
+   font-size: 12px;
+   color: red;
+}
+.game-h21{
+   margin: 0px 0px 0px -16px;
+}
+.game-h22{
+   margin: 0px 0px 0px 6px;
+}
+
+
+
+.sponsors>div{
+   margin: 3px 0px 0px 7px;
+   box-sizing: border-box;
+   width: 182px;
+   height: 432px;
+   border: 2px solid #286086;
+   text-align: center;
+}
+.sponsors-h1{
+   margin: 13px 0px 34px -10px;
+}
+.sponsor{
+   margin-top: -5px;
+   margin-left: 4px;
+}
+
+
+
+.black-description{
+   font-size: 9.5px;
+   font-family: "Arial";
+   background-color: black;
+   color: white;
+}
+
+
+
+footer{
+   /*позиционируем внизу страницы*/
+   position: absolute;
+   bottom: 0px;
+   /*Настраиваем размеры*/
+   height: 14px;
+   width: 100%;
+   /*Настраиваем размещение внутренних элементов*/
+   display: flex;
+}
+.copy{
+   width: 583px;
+   font-family: "Arial", regular;
+   letter-spacing: 10%;
+   font-size: 10px;
+   text-align: center;
+   margin: auto;
+}
+.comp{
+   font-size: 10px;
+   /*занимем оставшееся место*/
+   flex-grow: 1;
+   /*Настраиваем оформление*/
+   text-align: right;
+   font-family: Arial;
+   padding-right: 20px;
+   color: #676767;
+}
+
+
+.radioInput{
+   display: flex;
+   align-items: center;
+}
+
+.iframe {
+   width: 100%;
+   height: 100%;
+   overflow: visible;
+}
+.iframe::-webkit-scrollbar {
+   display: none;
+}

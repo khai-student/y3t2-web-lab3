@@ -1,0 +1,14 @@
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT quantity (#PCDATA)>
+    <!ELEMENT about (#PCDATA)>
+    <!ELEMENT image (#PCDATA)>
+
+    <!ATTLIST info text CDATA #REQUIRED>
+    <!ELEMENT info (#PCDATA)>
+
+    <!ELEMENT advanced-info (info+)>
+
+    <!ATTLIST item id CDATA #REQUIRED>
+    <!ELEMENT item (title, price, quantity, about, image, advanced-info)>
+    <!ELEMENT db (item+)>
